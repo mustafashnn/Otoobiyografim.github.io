@@ -1,0 +1,74 @@
+body {
+    margin:0;
+    background:black;
+    color:white;
+    font-family: 'Cinzel', serif;
+}
+
+.baslik{
+    text-align:center;
+    color:aliceblue;
+    margin:40px 0;
+    font-size:clamp(20px,4vw,28px);
+}
+
+
+.kutu{
+    width:275px;  
+    height:auto;          
+    border:1px solid #fff9f9;    
+    padding:30px;               
+    border-radius:20px;      
+    margin:50px auto;
+    color:aliceblue;
+}
+
+.kutu dt{
+    font-size:large;
+    margin-bottom:15px;
+}
+
+.kutu i{
+    font-size:27px;
+    margin-right:5px;
+}
+
+a:link, a:visited{
+    color: #fff9f9;
+    text-decoration:none;
+}
+a:hover, a:active{
+    color: #e84242;
+}
+
+@media(max-width:768px){
+    .menu{
+        display:none;
+        position:absolute;
+        top:60px;
+        right:0;
+        background:#111;
+        flex-direction:column;
+        gap:15px;
+        padding:15px 20px;
+        border:1px solid #333;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .kutu{
+        width:90%;
+        padding:20px;
+        margin:30px auto;
+    }
+
+    .kutu dt{
+        font-size:18px;
+    }
+}
